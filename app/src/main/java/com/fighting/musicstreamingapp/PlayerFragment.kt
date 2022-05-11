@@ -81,6 +81,14 @@ class PlayerFragment : Fragment(R.layout.fragment_player) {
                     }
                 }
 
+                override fun onMediaItemTransition(mediaItem: MediaItem?, reason: Int) {
+                    super.onMediaItemTransition(mediaItem, reason)
+
+                    val nextIndex = mediaItem?.mediaId ?: return
+                    model.currentPosition = nextIndex.toInt()
+                    playListAdapter.submitList(model.getAdapterModels())
+                }
+
             })
         }
     }
