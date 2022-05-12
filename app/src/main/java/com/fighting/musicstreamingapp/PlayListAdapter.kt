@@ -52,10 +52,12 @@ class PlayListAdapter(private val callback: (MusicModel) -> Unit) :
 
     companion object {
         val diffUtil = object : DiffUtil.ItemCallback<MusicModel>() {
+            // 실제로 같은 아이템인지 비교
             override fun areItemsTheSame(oldItem: MusicModel, newItem: MusicModel): Boolean {
                 return oldItem.id == newItem.id
             }
 
+            // 같은 컨텐츠인지 비교
             override fun areContentsTheSame(oldItem: MusicModel, newItem: MusicModel): Boolean {
                 return oldItem == newItem
             }
