@@ -1,6 +1,5 @@
-package com.fighting.musicstreamingapp
+package com.fighting.musicstreamingapp.activities
 
-import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -9,7 +8,12 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.fighting.musicstreamingapp.*
+import com.fighting.musicstreamingapp.adapter.PlayListAdapter
 import com.fighting.musicstreamingapp.databinding.FragmentPlayerBinding
+import com.fighting.musicstreamingapp.model.MusicModel
+import com.fighting.musicstreamingapp.model.PlayerModel
+import com.fighting.musicstreamingapp.model.mapper
 import com.fighting.musicstreamingapp.service.MusicDto
 import com.fighting.musicstreamingapp.service.MusicService
 import com.google.android.exoplayer2.MediaItem

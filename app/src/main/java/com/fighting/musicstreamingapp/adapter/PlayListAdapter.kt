@@ -1,4 +1,4 @@
-package com.fighting.musicstreamingapp
+package com.fighting.musicstreamingapp.adapter
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.fighting.musicstreamingapp.model.MusicModel
 import com.fighting.musicstreamingapp.databinding.ItemMusicBinding
 
 class PlayListAdapter(private val callback: (MusicModel) -> Unit) :

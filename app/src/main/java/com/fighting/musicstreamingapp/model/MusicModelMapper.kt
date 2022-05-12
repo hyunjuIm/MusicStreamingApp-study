@@ -1,4 +1,4 @@
-package com.fighting.musicstreamingapp
+package com.fighting.musicstreamingapp.model
 
 import com.fighting.musicstreamingapp.service.MusicDto
 import com.fighting.musicstreamingapp.service.MusicEntity

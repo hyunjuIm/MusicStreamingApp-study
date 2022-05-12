@@ -1,4 +1,4 @@
-package com.fighting.musicstreamingapp
+package com.fighting.musicstreamingapp.model
 
 data class MusicModel(
     val id: Long,
